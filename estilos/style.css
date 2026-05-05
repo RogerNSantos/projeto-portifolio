@@ -7,3 +7,9 @@
   --destaque-inverso
   --fundo-card
 */
+
+body{
+  background-color: aqua;
+  color: blanchedalmond;
+  font-size: 24px;
+}
