@@ -64,7 +64,7 @@ main{
   display: grid;
   grid-template-columns: auto 90vw auto;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 20px;  
 }
 
 section#ficha{
@@ -72,6 +72,7 @@ section#ficha{
   padding: 20px;
   border-radius: 8px;
   grid-column: 2;
+  box-shadow: -5px 5px 15px 5px rgba(0, 0, 0, 0.486);
 }
 
 section#ficha img.foto{
