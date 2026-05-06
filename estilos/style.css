@@ -21,12 +21,15 @@ body{
 }
 
 header{
-  background-color: var(--destaque);
-  color: var(--texto-inverso); /* corrigido */
-  padding: 10px;
   display: flex;
   justify-content: flex-end;
-  align-items: center; /* corrigido */
+  align-content: center;
+  background-color: var(--destaque);
+  color: var(--texto);
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 #menu ul{
