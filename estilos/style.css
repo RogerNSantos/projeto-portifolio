@@ -1,3 +1,12 @@
+/* Variáveis para cores: 
+--fundo-principal 
+--texto 
+--texto-inverso 
+--destaque 
+--destaque-inverso 
+--fundo-card 
+*/
+
 *{
   margin: 0;
   padding: 0;
@@ -8,7 +17,7 @@
   --fundo-principal: #f5f5f5;
   --texto: #222222;
   --texto-inverso: #ffffff;
-  --destaque: #0077ff;
+  --destaque: #73C8D2;
   --destaque-inverso: #66bbff;
   --fundo-card: #ffffff;
 }
@@ -17,8 +26,8 @@ body.escuro{
   --fundo-principal: #222222;
   --texto: #e0e0e0;
   --texto-inverso: #333333;
-  --destaque: #ff5522;
-  --destaque-inverso: #a73917;
+  --destaque: #0046FF;
+  --destaque-inverso: #FF9013;
   --fundo-card: #ffffff;
 }
 
@@ -66,12 +75,11 @@ header{
 
 main{
   display: grid;
-  grid-template-columns: 1fr minmax(300px, 900px) 1fr; /* corrigido */
+  grid-template-columns: auto 90vw auto;
   gap: 20px;
   margin-top: 20px;
 }
 
-/* 🔥 CARD COM HOVER */
 section#ficha{
   background-color: var(--fundo-card);
   padding: 20px;
@@ -105,6 +113,10 @@ section#ficha h1{
   text-align: center; 
 }
 
+section#ficha p{
+  color: black;
+}
+
 div#social{
   display: flex;
   justify-content: center;
@@ -136,7 +148,6 @@ article{
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* 🔥 hover nos artigos também */
 article:hover{
   transform: translateY(-6px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
@@ -179,7 +190,7 @@ article h2{
 
 #skill-container .nome{
   font-weight: bold;
-  color: var(--texto);
+  color: black;
 }
 
 #skill-container .porcent{
@@ -263,7 +274,7 @@ article h2{
 
 footer{
   background-color: var(--destaque);
-  color: var(--texto-inverso);
+  color: var(--texto);
   text-align: center;
   padding: 15px;
 }
