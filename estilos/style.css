@@ -43,7 +43,7 @@ body{
 header{
   font-size: 1.5em;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-content: center;
   background-color: var(--destaque);
   color: var(--texto);
@@ -258,6 +258,11 @@ article h2{
   transition: border-color 0.5s, border-width 0.5s;
 }
 
+#projeto-container > .projeto a{
+  color: #0046FF;
+  text-decoration: none;
+}
+
 #projeto-container .projeto:hover{
   border-color: var(--destaque);
   border-left-width: 15px;
@@ -300,7 +305,8 @@ footer a:hover{
   }
 
   div#social{
-    font-size: 1.6em;
+    font-size: 1.4em;
+
   }
 
   main{
